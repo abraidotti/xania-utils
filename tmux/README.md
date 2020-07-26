@@ -1,6 +1,6 @@
 # TMUX
 
-This script will stand up and run a persistent local build of Xania in discreet TMUX windows.
+This script will stand up and run a persistent local build of Xania in discrete TMUX windows.
 
 ## Table of Contents
 
