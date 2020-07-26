@@ -23,13 +23,13 @@ This script will stand up and run a persistent local build of Xania in discrete 
 
 Make sure you have Xania's required packages: `git make cmake gcc g++ curl`
 
-First build Xania's doorman and Xania binaries:
+First build Xania's doorman and Xania binaries and necessary directories:
 
 ```bash
-xania/make install
+xania/make install && make dirs
 ```
 
-To open tmux and execute those binaries, run:
+To open tmux and execute those binaries, run the following as `ubuntu`, not `root`:
 
 ```bash
 xania-utils/tmux-xania-local.sh
