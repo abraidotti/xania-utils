@@ -19,7 +19,7 @@ then
 
 	# Create and setup pane for build bin     
 	tmux new-window -t $SESSION:1 -n 'Build'     
-	tmux send-keys -t 'Build' 'cd $XANIA_HOME && cd xania/install/bin/' C-m 
+	tmux send-keys -t 'Build' 'cd $XANIA_HOME && cd xania/install/bin' C-m 
 	tmux send-keys -t 'Build' './doorman' C-m
 	tmux split-window -h -t 'Build'	
 	tmux send-keys -t 'Build' 'cd $XANIA_HOME && cd xania/area && ../install/bin/xania' C-m 
