@@ -1,10 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import argparse
-import glob
 import os
-import re
-import sys
 import time
 import traceback
 
@@ -37,8 +34,6 @@ def print_logs(interval):
             print_recent_logins(options.path)
         except Exception:
             traceback.print_exc()
-            # in production code you might want to have this instead of course:
-            # logger.exception("Problem while executing repetitive task.")
 
         # skip tasks if we are behind schedule:
         next_time += (time.time() - next_time) // interval * \

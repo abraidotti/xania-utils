@@ -7,5 +7,5 @@ Utilities for Xania, everyone's favorite MUD.
 > Refer to the README in each section.
 
 - [tmux scripts](./tmux/README.md)
-
-## WIP
+- [log-agent](./log-agent/README.md)
+- [area](./area/README.md)
